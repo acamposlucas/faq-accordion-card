@@ -8,44 +8,51 @@ body {
   place-items: center;
 }
 
+main {
+  margin-inline: 1.5rem;
+}
+
 .card {
   background-color: colors.$white;
   border-radius: 24px;
+  display: grid;
   padding-inline: 1.5rem;
-  padding-block: 3rem;
+  padding-block: 1.5rem;
+  width: 100%;
 
   h1 {
     text-align: center;
     margin-bottom: 2.5rem;
   }
 
-  ul {
-    list-style-type: none;
+  .wrapper {
     display: grid;
     gap: 1rem;
 
-    li {
-      padding-bottom: 1.25rem;
-      border-bottom: 1px solid colors.$gray-100;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2.5rem;
+    details {
       font-size: 0.875rem;
       color: colors.$gray-300;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid colors.$gray-100;
 
-      button {
-        border: 0;
-        background-color: transparent;
+      summary {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
 
-        .arrowIcon {
-          display: block;
+        &:after {
           background-image: url("../images/icon-arrow-down.svg");
-          background-repeat: no-repeat;
-          background-position: right;
-          width: 12px;
+          content: "";
+          display: inline-block;
           height: 6px;
+          width: 10px;
         }
+      }
+      p {
+        font-size: 0.875rem;
+        color: colors.$gray-300;
+        margin-top: 1rem;
       }
     }
   }
