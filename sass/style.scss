@@ -49,6 +49,14 @@ main {
           width: 10px;
         }
       }
+
+      &[open] {
+        summary {
+          &:after {
+            rotate: 180deg;
+          }
+        }
+      }
       p {
         font-size: 0.875rem;
         color: colors.$gray-300;
