@@ -1,0 +1,52 @@
+@use "./reset";
+@use "./colors";
+
+body {
+  background: linear-gradient(colors.$violet-500, colors.$blue-500);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background-color: colors.$white;
+  border-radius: 24px;
+  padding-inline: 1.5rem;
+  padding-block: 3rem;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  ul {
+    list-style-type: none;
+    display: grid;
+    gap: 1rem;
+
+    li {
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid colors.$gray-100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2.5rem;
+      font-size: 0.875rem;
+      color: colors.$gray-300;
+
+      button {
+        border: 0;
+        background-color: transparent;
+
+        .arrowIcon {
+          display: block;
+          background-image: url("../images/icon-arrow-down.svg");
+          background-repeat: no-repeat;
+          background-position: right;
+          width: 12px;
+          height: 6px;
+        }
+      }
+    }
+  }
+}

@@ -10,10 +10,47 @@
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="sass/style.scss" />
+    <title>FAQ accordion card</title>
   </head>
   <body>
-    <div id="app"></div>
+    <main>
+      <div class="card">
+        <h1>FAQ</h1>
+        <ul>
+          <li>
+            How many team members can I invite?
+            <button title="openItem">
+              <span class="arrowIcon"></span>
+            </button>
+          </li>
+          <li>
+            What is the maximum file upload size?
+            <button title="openItem">
+              <span class="arrowIcon"></span>
+            </button>
+          </li>
+          <li>
+            How do I reset my password?
+            <button title="openItem">
+              <span class="arrowIcon"></span>
+            </button>
+          </li>
+          <li>
+            Can I cancel my subscription?
+            <button title="openItem">
+              <span class="arrowIcon"></span>
+            </button>
+          </li>
+          <li>
+            Do you provide additional support?
+            <button title="openItem">
+              <span class="arrowIcon"></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
